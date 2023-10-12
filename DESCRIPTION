@@ -1,0 +1,20 @@
+Package: A02Ga_analysis
+Type: Package
+Version: 1.0.0
+Title: Analyse libre d'un jeu de données
+Description: Projet libre de groupe des modules 2 à 6 du cours SDD I à l'UMONS
+Authors@R: c(
+  person("Philippe", "Grosjean", role = c("aut", "cre"),
+    email = "phgrosjean@sciviews.org",
+    comment = c(ORCID = "0000-0002-2694-9471")),
+  person("Guyliann", "Engels", role = "aut",
+    email = "guyliann.engels@umons.ac.be",
+    comment = c(ORCID = "0000-0001-9514-1014"))
+  )
+Depends: R (>= 4.2.3)
+SystemRequirements: SciViews Box 2023 (https://www.sciviews.org/software/svbox/)
+License: MIT
+URL: https://github.com/BioDataScience-Course/A02Ga_analysis
+BugReports: https://github.com/BioDataScience-Course/A02Ga_analysis/issues
+Encoding: UTF-8
+Language: fr-FR

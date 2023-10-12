@@ -1,0 +1,147 @@
+---
+title: "___"
+author: "___, ___, ___, ___"
+date: "___"
+format:
+  html:
+    code-fold: true
+    code-tools: true
+    toc: true
+editor: visual
+lang: fr
+bibliography: "biblio/biblio.bib"
+---
+
+<!--# Ceci est un commentaire. -->
+
+<!--% Ceci est une consigne. Ne jamais modifier ni déplacer les consignes dans le document ! -->
+
+<!--% Un et un seul étudiant remplit titre, noms et date dans l'entête YAML. Ensuite, il fait un commit - pull - push et tous les autres font un pull. -->
+
+```{r setup, include=FALSE}
+# Configuration de l'environnement
+SciViews::R(lang = "fr")
+```
+
+## Introduction et but
+
+<!--% Arrivé au module 4, vous pouvez commencer à rédigez une courte introduction de 2 ou 3 phrases concernant vos données et une phrase pour le but du travail. Vous pouvez citez la bibliographie en utilisant le formattage Markdown ad hoc et en incluant votre référence au format bibtex dans le fichier biblio/biblio.bib -->
+
+... Introduction et but...
+
+## Matériel et méthodes
+
+<!--% Arrivé au module 4, indiquez ici d'où viennent les données et aussi quel logiciel (et version) vous utilisez pour les analyses. -->
+
+...Matériel et méthodes...
+
+## Analyses
+
+<!--% Un et un seul étudiant complète le chunk ci-dessous pour importer les données et pour visualiser le début et la fin du jeu de données, ainsi que la description des données. Ensuite, il fait un commit - pull - push, et tous les autres font un pull. -->
+
+```{r import}
+# Lecture des données
+___ <- read("data/___")
+# Tableau des premières et dernières lignes
+tabularise$headtail(___)
+# Description des données
+skimr::skim(___)
+```
+
+### Graphiques en nuage de points
+
+<!--# Ceci correspond à la partie I (module 2 du cours). -->
+
+<!--% Chaque étudiant réalise un graphique en nuage de points pertinent et l'interprète ci-dessous. Attribuez-vous un numéro de 1 à 5 au sein de l'équipe et ne modifiez que la partie vous concernant. Faites des commit - pull - push et vérifiez que tout se passe bien ou alors, appelez un enseignant à la rescousse. -->
+
+<!--% Graphique et interprétation de l'étudiant #1 ci-dessous. -->
+
+```{r chart1}
+
+```
+
+... interprétation #1...
+
+<!--% Graphique et interprétation de l'étudiant #2 ci-dessous. -->
+
+```{r chart2}
+
+```
+
+... interprétation #2...
+
+<!--% Graphique et interprétation de l'étudiant #3 ci-dessous. -->
+
+```{r chart3}
+
+```
+
+... interprétation #3...
+
+<!--% Graphique et interprétation de l'étudiant #4 ci-dessous. -->
+
+```{r chart4}
+
+```
+
+... interprétation #4...
+
+<!--% Graphique et interprétation de l'étudiant #5 ci-dessous (effacez cette section si vous n'êtes que quatre). -->
+
+```{r chart5}
+
+```
+
+... interprétation #5...
+
+### Autres graphiques
+
+<!--# Ceci correspond à la partie II (modules 3 et 4 du cours). -->
+
+<!--% Chaque étudiant réalise deux graphiques parmi ceux des modules 2 et 3 du cours et les interprètent juste en dessous. Organisez-vous pour minimiser les risques de conflits. Vous devez tous travailler dans le même document (pas de copies séparées par étudiants). -->
+
+...vos autres graphiques ici...
+
+### Remaniement des données I
+
+<!--# Ceci correspond à la partie III (module 5 du cours). -->
+
+<!--% Catégorisez les variables de votre jeu de données (types de variables). -->
+
+-   ...
+
+-   ...
+
+-   ...
+
+<!--% Par étudiant, réalisez une conversion de quantitatif à discret ou de quantitatif à qualitatif, ou un découpage en classes qui fait sens dans vos données. Corrigez aussi les types de variables qui seraient mal représentées dans votre jeu de données. -->
+
+...conversion ici...
+
+<!--% Chaque étudiant retravaille les données pour réaliser un jeu de données dérivé <data>A, <data>B, <data>C, <data>D, .... où <data> est le nom initial de votre jeu de données. Vous devez utiliser les verbes sselect(), sfilter(), smutate(), sgroup_by() et ssummarise() pour ces transformations. Soyez imaginatifs, mais réalisez des transformations qui ont un sens. Utilisez le chaînage des opérations d'une étape à l'autre avec l'opérateur de pipe que vous préférez. -->
+
+...vos remaniement ici...
+
+### Remaniement des données II
+
+<!--# Ceci correspond à la partie IV (module 6 du cours). -->
+
+<!--% Réalisez un tableau de contingence à simple et un autre à double entrée à partir de vos données. -->
+
+...votre tableau de contingence à simple entrée...
+
+...votre tableau de contingence à double entrée...
+
+<!--% Labelisez vos données et ajoutez les unités là où cela est nécessaire (labels en français). -->
+
+...labelisation de vos données ici...
+
+## Conclusions
+
+<!--% Lorsque toutes les analyses sont réalisées, terminez ce bloc-notes avec 3 à 5 phrases de conclusion en rapport avec ce que vous avez observé dans vos analyses. -->
+
+...vos conclusions ici...
+
+## Références
+
+<!--% N'indiquez rien ci-dessous. Quarto se chargera de rajouter vos références bibliographiques automatiquement. -->
