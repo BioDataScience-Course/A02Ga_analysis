@@ -43,7 +43,6 @@ dir_create("data")
 #aravo <- read("aravo", package = "ade4")
 #aravo3 <- as.data.table(aravo$spe[, c("Agro.rupe", "Fest.quad", "Sali.retu")])
 #aravo3 <- cbind(aravo3, aravo$env)
-#aravo3 <- cbind(aravo3, aravo$traits)
 #aravo3$PhysD <- as.character(aravo3$PhysD)
 #aravo3[c(1, 5:6, 8, 23, 45, 71:73), "Snow"] <- NA
 #aravo3[c(5:10, 44, 81), "ZoogD"] <- NA
